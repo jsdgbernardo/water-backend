@@ -16,6 +16,7 @@ app.post('/api/data', (req, res) => {
 });
 
 app.get('/api/data', (req, res) => {
+  console.log('GET /api/data called');
   res.json({ weight: latestWeight });
 });
 
